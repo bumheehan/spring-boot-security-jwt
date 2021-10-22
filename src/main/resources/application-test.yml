@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+
+jasypt:
+  test: ENC(nIQZ7SHnih3FoH3Qbe60Yns3YCeIOMErLxcs9rcVO485j5VkVR1PEMHtPfY=)
+
+
+
+logging:
+  level:
+    kr.co.everex: debug

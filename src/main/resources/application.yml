@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    group:
+      dev : "test, testdb,common"
+      prod : "proddb,common"
+---
+spring:
+  profiles:
+    active: ${PROFILE:dev}

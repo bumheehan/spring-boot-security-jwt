@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: testdb
+  jpa:
+    show-sql: true
+    # DB 초기화 및 초기화 전략
+    generate-ddl: true # DDL 초기화 할 건지 확인
+    hibernate:
+      ddl-auto: create # DDL 초기화시 전략
+  datasource:
+    url: jdbc:h2:tcp://localhost:1521/security;
+    username: sa
+    password:
